@@ -9,12 +9,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <properties>
+        <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
+        <hibernate-core.version>5.2.12.Final</hibernate-core.version>
+        <javax-servlet-api.version>4.0.0</javax-servlet-api.version>
+        <jta.version>1.1</jta.version>
+        <postgresql.version>42.1.4</postgresql.version>
         <spring.version>5.0.2.RELEASE</spring.version>
         <spring-data-jpa.version>2.0.2.RELEASE</spring-data-jpa.version>
-        <javax-servlet-api.version>4.0.0</javax-servlet-api.version>
-        <hibernate-core.version>5.2.12.Final</hibernate-core.version>
-        <postgresql.version>42.1.4</postgresql.version>
-        <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
     </properties>
     <dependencies>
 
@@ -55,6 +56,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
             <version>${commons-dbcp2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>${jta.version}</version>
         </dependency>
 
     </dependencies>
